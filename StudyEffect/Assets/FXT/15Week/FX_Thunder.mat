@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_Thunder
+  m_Shader: {fileID: 4800000, guid: 54dff7d725a798b4b885f47b9a24bb8e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b2d187ea358a03045a7e2c2b5363b47c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 3c1b02a85ac349f4f9375a88a9fa62e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 2, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Dissolve: 0.07
+    - _Dissolve_UpPanner: 0
+    - _Dissolve_VPanner: 0
+    - _MainIns: 1.14
+    - _MainPower: 0.75
+    - _Noise_U: 1.82
+    - _Noise_V: 1.67
+    - __dirty: 0
+    m_Colors:
+    - _MainColor: {r: 1, g: 0.9914962, b: 0, a: 0}

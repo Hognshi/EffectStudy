@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: ad18a193b411af24fb5dc875179dfe5a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _GradationTex: {fileID: 2800000, guid: 0964f63808cad004dafaaf75fe572bbd, type: 3}
+  - _FXT_Projectile_Head: {fileID: 2800000, guid: 799f3cb560952cc4ca048de6a9029858,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

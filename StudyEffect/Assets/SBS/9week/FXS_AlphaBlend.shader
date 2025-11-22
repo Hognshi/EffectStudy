@@ -1,0 +1,99 @@
+// Made with Amplify Shader Editor
+// Available at the Unity Asset Store - http://u3d.as/y3X 
+Shader "Amplify Shader/SBS/9week/FX_AlphaBlend"
+{
+	Properties
+	{
+		_MainTex("MainTex", 2D) = "white" {}
+		[HDR]_Main_Color("Main_Color", Color) = (1,1,1,0)
+		_Main_Power("Main_Power", Float) = 1
+		_Depth_Fade("Depth_Fade", Float) = 0
+		_Opacity("Opacity", Float) = 0
+		[HideInInspector] _texcoord( "", 2D ) = "white" {}
+		[HideInInspector] __dirty( "", Int ) = 1
+	}
+
+	SubShader
+	{
+		Tags{ "RenderType" = "Custom"  "Queue" = "Transparent+0" "IsEmissive" = "true"  }
+		Cull Back
+		ZWrite Off
+		Blend SrcAlpha OneMinusSrcAlpha
+		
+		CGPROGRAM
+		#include "UnityCG.cginc"
+		#pragma target 3.0
+		#pragma surface surf Unlit keepalpha noshadow noambient novertexlights nolightmap  nodynlightmap nodirlightmap nofog nometa noforwardadd 
+		struct Input
+		{
+			float2 uv_texcoord;
+			float4 vertexColor : COLOR;
+			float4 screenPos;
+		};
+
+		uniform float4 _Main_Color;
+		uniform sampler2D _MainTex;
+		uniform float4 _MainTex_ST;
+		uniform float _Main_Power;
+		UNITY_DECLARE_DEPTH_TEXTURE( _CameraDepthTexture );
+		uniform float4 _CameraDepthTexture_TexelSize;
+		uniform float _Depth_Fade;
+		uniform float _Opacity;
+
+		inline half4 LightingUnlit( SurfaceOutput s, half3 lightDir, half atten )
+		{
+			return half4 ( 0, 0, 0, s.Alpha );
+		}
+
+		void surf( Input i , inout SurfaceOutput o )
+		{
+			float2 uv0_MainTex = i.uv_texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
+			float4 tex2DNode8 = tex2D( _MainTex, uv0_MainTex );
+			float4 temp_cast_0 = (_Main_Power).xxxx;
+			o.Emission = ( _Main_Color * pow( tex2DNode8 , temp_cast_0 ) * i.vertexColor ).rgb;
+			float4 ase_screenPos = float4( i.screenPos.xyz , i.screenPos.w + 0.00000000001 );
+			float4 ase_screenPosNorm = ase_screenPos / ase_screenPos.w;
+			ase_screenPosNorm.z = ( UNITY_NEAR_CLIP_VALUE >= 0 ) ? ase_screenPosNorm.z : ase_screenPosNorm.z * 0.5 + 0.5;
+			float screenDepth23 = LinearEyeDepth(UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture,UNITY_PROJ_COORD( ase_screenPos ))));
+			float distanceDepth23 = abs( ( screenDepth23 - LinearEyeDepth( ase_screenPosNorm.z ) ) / ( _Depth_Fade ) );
+			o.Alpha = ( tex2DNode8.r * i.vertexColor.a * saturate( distanceDepth23 ) * _Opacity );
+		}
+
+		ENDCG
+	}
+	CustomEditor "ASEMaterialInspector"
+}
+/*ASEBEGIN
+Version=16700
+277;218;1920;1013;1489.08;239.286;1.3;True;False
+Node;AmplifyShaderEditor.TextureCoordinatesNode;10;-856.4509,-10.88033;Float;True;0;8;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;25;-654.7599,743.297;Float;False;Property;_Depth_Fade;Depth_Fade;4;0;Create;True;0;0;False;0;0;3.3;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SamplerNode;8;-585.5,-37.5;Float;True;Property;_MainTex;MainTex;1;0;Create;True;0;0;False;0;8d21b35fab1359d4aa689ddf302e1b01;f38c1841d7ffa7240ba7ae5c416b4ade;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;12;-410.5,-148.5;Float;False;Property;_Main_Power;Main_Power;3;0;Create;True;0;0;False;0;1;1;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.DepthFade;23;-402.7599,724.297;Float;False;True;False;True;2;1;FLOAT3;0,0,0;False;0;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;28;-394.0209,466.9716;Float;False;Property;_Opacity;Opacity;5;0;Create;True;0;0;False;0;0;65.93;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.PowerNode;11;-213.5,-33.5;Float;True;2;0;COLOR;0,0,0,0;False;1;FLOAT;1;False;1;COLOR;0
+Node;AmplifyShaderEditor.ColorNode;14;-170.2199,-263.4712;Float;False;Property;_Main_Color;Main_Color;2;1;[HDR];Create;True;0;0;False;0;1,1,1,0;1,1,1,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.VertexColorNode;21;-227.6017,274.2467;Float;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SaturateNode;24;-97.7599,724.297;Float;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;13;80.5,-58.5;Float;True;3;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;22;144.4501,380.6736;Float;True;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SaturateNode;26;-167.7209,579.1713;Float;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;2;594.6296,176.1861;Float;False;True;2;Float;ASEMaterialInspector;0;0;Unlit;Amplify Shader/SBS/9week/FX_AlphaBlend;False;False;False;False;True;True;True;True;True;True;True;True;False;False;False;False;False;False;False;False;False;Back;2;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Custom;0.5;True;False;0;True;Custom;;Transparent;All;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;False;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;0;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;15;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+WireConnection;8;1;10;0
+WireConnection;23;0;25;0
+WireConnection;11;0;8;0
+WireConnection;11;1;12;0
+WireConnection;24;0;23;0
+WireConnection;13;0;14;0
+WireConnection;13;1;11;0
+WireConnection;13;2;21;0
+WireConnection;22;0;8;1
+WireConnection;22;1;21;4
+WireConnection;22;2;24;0
+WireConnection;22;3;28;0
+WireConnection;26;0;28;0
+WireConnection;2;2;13;0
+WireConnection;2;9;22;0
+ASEEND*/
+//CHKSM=16901F19612BFEC42F519E3A84A998E9CCB40319

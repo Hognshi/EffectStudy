@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ebbc65b9cf822684ab42f7e82b7659f5
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _NormalTex: {fileID: 2800000, guid: fd9ed522eb627b24bb7271fdd2187903, type: 3}
+  - _BaseTex: {fileID: 2800000, guid: a2e8fe79f0785a547a4865b9c58e66f5, type: 3}
+  - _BumpTex: {fileID: 2800000, guid: 7fc2022726983fd4986d8e27fcc8496f, type: 3}
+  - _NosieTex: {fileID: 2800000, guid: 1660e2c4f161d954fa8674aef3559472, type: 3}
+  - _FXT_Crack_Noise: {fileID: 2800000, guid: 2501e4ecfb5b5c749ad526597f3b4c2b, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Amplify Shader_SBS_25week_FX_Water_Vertex
+  m_Shader: {fileID: 4800000, guid: f58ed304ee41bba46ac6225f8bfa309b, type: 3}
+  m_ShaderKeywords: _USE_CUSTOM_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _HighlightTex:
+        m_Texture: {fileID: 2800000, guid: c10244bcb5987bd41b64e7758c3af36f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 710f0ecf3a70db046b1d6dc37fef65ac, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 7f78920f34007b34ca97216413e97960, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 645b0a2fda25d114599a2fba6417fe81, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VertexTex:
+        m_Texture: {fileID: 2800000, guid: 5d62011b35f580944ac157844229a7ce, type: 3}
+        m_Scale: {x: 1, y: 0.4}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Color_Offset: 2.62
+    - _Color_Range: 10
+    - _Dissolve: 1
+    - _Distortion: 0
+    - _Highlight_Range: 0.2476907
+    - _Highlight_Upanner: 0
+    - _Highlight_Vpanner: 1
+    - _Main_Upanner: 0
+    - _Main_Vpanner: 0.5
+    - _Normal_Upanner: 0
+    - _Normal_Vpanner: 0.1
+    - _Opacity: 1
+    - _USE_Custom: 1
+    - _VertexNormal_Str: -2.79
+    - _Vertex_Upanner: 0
+    - _Vertex_Vpanner: 0.7
+    - __dirty: 0
+    m_Colors:
+    - _Color_A: {r: 0, g: 0.4774324, b: 0.8396226, a: 0}
+    - _Color_B: {r: 0.740566, g: 0.9172819, b: 1, a: 0}
+    - _Color_High: {r: 2, g: 2, b: 2, a: 0}

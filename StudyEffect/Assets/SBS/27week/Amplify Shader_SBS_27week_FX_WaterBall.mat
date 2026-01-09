@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Amplify Shader_SBS_27week_FX_WaterBall
+  m_Shader: {fileID: 4800000, guid: bed5ee25cc138754b93624956774c3a3, type: 3}
+  m_ShaderKeywords: _USE_CUSTOM_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _EmiTex:
+        m_Texture: {fileID: 2800000, guid: f6a0533931b7da14584952757e0eb640, type: 3}
+        m_Scale: {x: 0.1, y: 0.4}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 6e5343f0266cf36489aa21b41e5bc1f7, type: 3}
+        m_Scale: {x: 0.5, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 51fe2c9d5b236124d9f9e7ea528b0bea, type: 3}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _VertexTex:
+        m_Texture: {fileID: 2800000, guid: 6e5343f0266cf36489aa21b41e5bc1f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Desaturate: 1
+    - _Dissolve: 0.474
+    - _Distortion: 0.01
+    - _Edge_Range: 0.14
+    - _Emi_Offset: 12
+    - _Emi_Range: 1.66
+    - _Emi_Upanner: -0.02
+    - _Emi_Vpanner: -0.01
+    - _Float0: 0.1
+    - _Fresnel_Power: 5.29
+    - _Fresnel_Scale: 5.65
+    - _Noise_Upanner: -0.05
+    - _Noise_Vpanner: 0
+    - _Normal_Upanner: 0.18
+    - _Normal_Vpanner: 0
+    - _USE_Custom: 1
+    - _Vertex_Normal_Str: 0.3
+    - _Vertex_Upanner: 0.2
+    - _Vertex_Vpanner: 0.2
+    - __dirty: 0
+    m_Colors:
+    - _Edge_Color: {r: 1.0901961, g: 1.6078432, b: 2, a: 0}
+    - _Emi_Color: {r: 2.065491, g: 3.8867097, b: 6.167381, a: 0}
+    - _Fresnel_Color: {r: 0.589, g: 0.76710004, b: 1, a: 0}

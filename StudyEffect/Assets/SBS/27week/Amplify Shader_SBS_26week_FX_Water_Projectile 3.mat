@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Amplify Shader_SBS_26week_FX_Water_Projectile 3
+  m_Shader: {fileID: 4800000, guid: 1c06aac5467931741be3431384abe08d, type: 3}
+  m_ShaderKeywords: _USE_CUSTOM_ON _USE_GRADATIONTEX_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GradationTex:
+        m_Texture: {fileID: 2800000, guid: e1860fa4f6629ef4489700f06904f8de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 057b819914dc9f9469d447ddde7b6aee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: c7d564bbc661feb448e7dcb86e2aa438, type: 3}
+        m_Scale: {x: 7, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 51fe2c9d5b236124d9f9e7ea528b0bea, type: 3}
+        m_Scale: {x: 7, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Color_Offset: 1
+    - _Color_Range: 27.29
+    - _Distortion: 0.027
+    - _Noise_Ins: 1.5
+    - _Noise_Power: 3
+    - _Noise_Upanner: -0.2
+    - _Noise_Vpanner: 0.1
+    - _Normal_Upanner: -1
+    - _Normal_Vpanner: 0
+    - _USE_Custom: 1
+    - _USE_GradationTex: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color_A: {r: 0.16646011, g: 0.15218939, b: 0.5660378, a: 0}
+    - _Color_B: {r: 1.1348191, g: 1.2861283, b: 1.6055588, a: 0}
+    - _Noise_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0}

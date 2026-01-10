@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: ce8614f89ecc304408f35e76c4ac4105
+guid: 707919eaed8926a44871f8c6fb982d40
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
+  - _BaseTex: {fileID: 2800000, guid: 6d73835c8b264db41a2e294a9354c4f0, type: 3}
+  - _MainTex: {fileID: 2800000, guid: d2c9937768d75504886d4429a985441c, type: 3}
   - _FXT_ColorGradient: {fileID: 2800000, guid: 9c06787883add984bb790cd9d873211e,
       type: 3}
-  - _NoiseTex: {fileID: 2800000, guid: b408675f3e50e3f4296a83bd62c5cc23, type: 3}
-  - _TextureSample1: {fileID: 2800000, guid: 5d134e1cd3cdc2b48985a1b0df1a9514, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 

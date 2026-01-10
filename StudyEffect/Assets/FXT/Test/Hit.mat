@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Amplify Shader
-  m_Shader: {fileID: 4800000, guid: 1c64bf683103fb140ba1e02fe479f9e8, type: 3}
+  m_Name: Hit
+  m_Shader: {fileID: 4800000, guid: 9ff302a3622035240a1f015850b4effa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -19,8 +19,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Circle:
-        m_Texture: {fileID: 2800000, guid: 5d134e1cd3cdc2b48985a1b0df1a9514, type: 3}
+    - _FXT_ColorGradient:
+        m_Texture: {fileID: 2800000, guid: 9c06787883add984bb790cd9d873211e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Hit:
+        m_Texture: {fileID: 2800000, guid: f810e6bd32fcd5e459a0ceb8ccff4e2f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -28,6 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _U: 1
+    - _V: 0
     - __dirty: 0
-    m_Colors:
-    - _Color0: {r: 4, g: 3.3411765, b: 1.8352941, a: 0}
+    m_Colors: []

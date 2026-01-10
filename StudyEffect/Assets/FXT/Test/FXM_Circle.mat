@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Circle
+  m_Shader: {fileID: 4800000, guid: ce8614f89ecc304408f35e76c4ac4105, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FXT_ColorGradient:
+        m_Texture: {fileID: 2800000, guid: 9c06787883add984bb790cd9d873211e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 1ab104269e61d6c40969a74d1efcc866, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: d010bcc6d54f28a41aa8be3558cfd9f3, type: 3}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 2, y: 1}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 5d134e1cd3cdc2b48985a1b0df1a9514, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Float0: 0.5
+    - _Float1: 0
+    - _Float3: 0.2
+    - _NoiseScale: 0.8
+    - _NoiseSpeed: 0.2
+    - _NormalU: 0
+    - _NormalV: 0
+    - _U: 0.5
+    - _V: 0.5
+    - __dirty: 0
+    m_Colors: []

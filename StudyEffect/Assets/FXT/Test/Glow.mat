@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Barrier
-  m_Shader: {fileID: 4800000, guid: d09048de95b2c5141a1cf3270780fa3a, type: 3}
+  m_Name: Glow
+  m_Shader: {fileID: 4800000, guid: 9fcf8700c5a52334a90f15e0a8022a6c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -23,12 +23,8 @@ Material:
         m_Texture: {fileID: 2800000, guid: 9c06787883add984bb790cd9d873211e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
-        m_Texture: {fileID: 2800000, guid: b408675f3e50e3f4296a83bd62c5cc23, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _tex4coord:
-        m_Texture: {fileID: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: f38c1841d7ffa7240ba7ae5c416b4ade, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -36,8 +32,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Ins: 0.2
-    - _Pow: 1.5
     - _U: 1
     - _V: 1
     - __dirty: 0

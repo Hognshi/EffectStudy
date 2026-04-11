@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Amplify Shader_SBS_30Week_CharcaterFX_ICe
+  m_Shader: {fileID: 4800000, guid: cf1ce95582308f346860cd746460de09, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Mutant_Emi:
+        m_Texture: {fileID: 2800000, guid: 404e99a36d8d57a4fbe95876873d1e69, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mutant_Spe:
+        m_Texture: {fileID: 2800000, guid: bed08f1ad8a2e32449fccc26cd6155d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mutant_diffuse:
+        m_Texture: {fileID: 2800000, guid: 57975ef3dc1c0ee4795a9c6ec1ed9527, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mutant_normal:
+        m_Texture: {fileID: 2800000, guid: 87b7ebc1fb117ae409e8784a7ef0c172, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 3aabffbea1fbc61498ebe46c4d1a8918, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _T_Stone:
+        m_Texture: {fileID: 2800000, guid: 796440853cd24b34ea267cd0df9422fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ChangeTex: 1
+    - _EmiIce: 0
+    - _IceIns: 22.59
+    - _IcePower: 15.23
+    - __dirty: 0
+    m_Colors: []

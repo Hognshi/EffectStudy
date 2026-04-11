@@ -28,11 +28,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0.1, y: 0}
     - _MaskTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 721fbf961ddca074d8e6f773e3caa157, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 51fe2c9d5b236124d9f9e7ea528b0bea, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8178c5ce4aa3d5341804ce7d0ff18428, type: 3}
         m_Scale: {x: 2, y: 1}
         m_Offset: {x: 0, y: 0}
     - _tex4coord:
@@ -44,15 +44,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Distortion: 0.1
+    - _Distortion: 0.342
     - _Float0: -0.21
     - _Float1: 1
     - _Float2: 1
     - _Main_Ins: 2
     - _Main_power: 1
-    - _NormalUPanner: 1
+    - _NormalUPanner: 3
     - _NormalVPanner: 0
-    - _OpacityIns: 2
-    - _OpacityPower: 5
+    - _OpacityIns: 2.26
+    - _OpacityPower: 1
     - __dirty: 0
     m_Colors: []

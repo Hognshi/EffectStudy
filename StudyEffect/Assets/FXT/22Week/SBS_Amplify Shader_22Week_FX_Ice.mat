@@ -44,9 +44,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Desatureate: 0.291
-    - _EmiIns: 5.08
-    - _EmiPower: 1.5
+    - _Desatureate: 0.207
+    - _EmiIns: 8.39
+    - _EmiPower: 1
     - _FresnelPower: 7.3
     - _FresnelScale: 1
     - _NormalScale: 4.7

@@ -21,7 +21,7 @@ Material:
     m_TexEnvs:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 9d96c7e8f310851478a946901b7ee893, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
         m_Texture: {fileID: 2800000, guid: 873e993aa46d81d42a47999da6ea8694, type: 3}
@@ -48,12 +48,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Desaturate: 0.361
+    - _Desaturate: 0
     - _Distortion: 3.75
     - _MainIns: 1.1
     - _MainPower: 1
     - _ParallaxOffset: 0.163
     - __dirty: 0
     m_Colors:
-    - _NormalTile: {r: 3, g: 2, b: 0, a: 0}
+    - _NormalTile: {r: 0, g: 0, b: 0, a: 0}
     - _ParallaxPanner: {r: 0.001, g: 0.001, b: 0, a: 0}
